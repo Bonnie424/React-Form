@@ -24,8 +24,8 @@ export default function UserForm() {
           type="text"
           id="user-name"
           name="name"
-          value={name}
           placeholder="Enter your name"
+          required
           onChange={(e) => setName(e.target.value)}
         ></input>
         </div>
@@ -35,8 +35,8 @@ export default function UserForm() {
           type="email"
           id="user-email"
           name="email"
-          value={email}
           placeholder="Enter your email"
+          required
           onChange={(e) => setEmail(e.target.value)}
         ></input>
         </div>
